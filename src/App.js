@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 //importing the main components
 import SplashScreen from "./components/SplashScreen";
 import LoginScreen from "./components/LoginScreen";
-import SignupScreen from "./components/SignupScreen.js";
+import SignupScreen from "./components/SignupScreen";
 
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
       <div className="App">
         <Routes>
           <Route
-            path="/"
+            path="/login"
             element={showSplash ? <SplashScreen /> : <LoginScreen />}
           />
           <Route path="/register" element={<SignupScreen />} />
