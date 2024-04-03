@@ -24,9 +24,8 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={showSplash ? <SplashScreen /> : <HomeScreen />}
+            element={showSplash ? <SplashScreen /> : <LoginScreen />}
           />
-          <Route path="/login" element={<LoginScreen />} />
           <Route path="/register" element={<SignupScreen />} />
         </Routes>
       </div>
