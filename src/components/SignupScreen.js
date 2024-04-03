@@ -11,7 +11,6 @@ function SignupScreen() {
   const [email, setEmail] = useState("");
   const [gender, setGender] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
-  const [healthStatus, setHealthStatus] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -73,8 +72,7 @@ function SignupScreen() {
                       className="d-none d-lg-block"
                       style={{ color: "green" }}
                     >
-                      {" "}
-                      Avinx Health{" "}
+                      Register
                     </span>
                   </button>
                 </div>
@@ -194,25 +192,6 @@ function SignupScreen() {
                           />
                           <div className="invalid-feedback">
                             Please, enter your number!
-                          </div>
-                        </div>
-
-                        {/* Health Status */}
-                        <div className="col-12">
-                          <label htmlFor="health_status" className="form-label">
-                            {" "}
-                            Health Status{" "}
-                          </label>
-                          <input
-                            type="text"
-                            name="health_status"
-                            className="form-control"
-                            value={healthStatus}
-                            onChange={(e) => setHealthStatus(e.target.value)}
-                            required
-                          />
-                          <div className="invalid-feedback">
-                            What's your Mental Health State?
                           </div>
                         </div>
 
